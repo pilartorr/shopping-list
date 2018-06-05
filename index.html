@@ -9,21 +9,20 @@ integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJ
   <title>The Shopping List</title>
 </head>
 <body>
-
-  <div class="main-container container text-center m-auto">
-      <h1 class="display-2">The Shopping List</h1>
-
-      <form class="form-inline" id="form">
-        <div class="form-group mx-sm-3 mb-2">
-          <input type="text" class="form-control" id="add-product" placeholder="item to add...">
-        </div>
-        <button type="submit" class="btn btn-primary mb-2" id="button">Add</button>
-      </form>
-      <ul id="list"></ul>
-    </div>
-
-  <script src="js/index.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <main class="d-flex">
+    <div class="main-container container text-center m-auto">
+        <h1 class="display-3 mb-5">The Shopping List</h1>
+        <form class="justify-content-center form-inline" id="form">
+          <div class="form-group mx-sm-3 mb-2">
+            <input type="text" class="form-control" id="add-product" placeholder="item to add...">
+          </div>
+          <button type="submit" class="btn btn-primary mb-2" id="button">Add</button>
+        </form>
+        <ul id="list" class="list-group"></ul>
+      </div>
+    </main>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

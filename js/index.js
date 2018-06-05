@@ -12,16 +12,20 @@ addForm.addEventListener('submit', function(event){
   itemList.appendChild(contentList);
   shoppingList.appendChild(itemList);
 
-  //add a button
+  //add a remove-button
   let removeButton = document.createElement("button");
   let contentButton = document.createTextNode("Remove");
   removeButton.appendChild(contentButton);
   // add the button to itemList
   itemList.appendChild(removeButton);
 
-  //removeItemList
+  //removeItemList with remove-button
   removeButton.addEventListener('click', function(event){
     let itemListDelete = event.target.parentNode;
     shoppingList.removeChild(itemListDelete);
   })
+
+  //add styles bootstrap to the removeButton
+  removeButton.classList.add('btn', 'btn-danger', 'd-flex', 'justify-content-between');
+  itemList.classList.add('list-group-item','d-flex', 'justify-content-between');
 })
