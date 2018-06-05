@@ -28,4 +28,7 @@ addForm.addEventListener('submit', function(event){
   //add styles bootstrap to the removeButton
   removeButton.classList.add('btn', 'btn-danger', 'd-flex', 'justify-content-between');
   itemList.classList.add('list-group-item','d-flex', 'justify-content-between');
+
+  //delete the value after add in the shoppingList
+  event.target.reset();
 })
